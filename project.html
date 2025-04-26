@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DGital - Digital Agency HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+   <style>
+        .project-link {
+            transition: all 0.3s;
+        }
+        .project-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .project-link .btn-visit {
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .project-link:hover .btn-visit {
+            opacity: 1;
+        }
+        /* Portfolio filter styles */
+        #portfolio-flters li {
+            cursor: pointer;
+            display: inline-block;
+            padding: 8px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #444;
+            margin: 0 4px 8px 4px;
+            transition: all 0.3s;
+            border-radius: 50px;
+        }
+        #portfolio-flters li:hover,
+        #portfolio-flters li.active {
+            color: #fff;
+            background: var(--primary);
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            display: block; /* Show all items by default */
+        }
+        .portfolio-item.hidden {
+            display: none;
+        }
+        .portfolio-description {
+            height: 100%;
+            
+        }
+        .portfolio-description p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+    </style>  
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Previous content remains the same until the Projects section -->
+      <!-- Spinner Start -->
+      <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar & Hero Start -->
+  <div class="container-xxl position-relative p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top px-4 px-lg-5" aria-label="Main navigation">
+        <a href="index.html" class="navbar-brand p-0 animate__animated animate__fadeInLeft">
+            <h1 class="m-0">Devynest</h1>
+        </a>
+        <button class="navbar-toggler border-0 animate__animated animate__bounceIn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link animate__animated animate__fadeInDown" data-wow-delay="0.1s">Home</a>
+                <a href="about.html" class="nav-item nav-link animate__animated animate__fadeInDown" data-wow-delay="0.2s">About</a>
+                <a href="service.html" class="nav-item nav-link animate__animated animate__fadeInDown" data-wow-delay="0.3s">Services</a>
+                <div class="nav-item dropdown animate__animated animate__fadeInDown active" data-wow-delay="0.4s">
+                    <a href="#" class="nav-link dropdown-toggle active" id="pagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                    <div class="dropdown-menu border-0 shadow-sm m-0" aria-labelledby="pagesDropdown">
+                        <a href="team.html" class="dropdown-item active">Our Team</a>
+                        <a href="project.html" class="dropdown-item">Projects</a>
+                    </div>
+                </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-3 animate__animated animate__bounceIn d-none d-lg-block" data-wow-delay="0.6s">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-xxl py-8 bg-primary hero-header">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated slideInDown">Our Projects</h1>
+                    <hr class="bg-white mx-auto mt-0 animate__animated animate__fadeIn" style="width: 90px;">
+                    <p class="text-white fw-medium animate__animated animate__fadeInUp" data-wow-delay="0.2s">Explore the Project That Our clients Enjoy todady!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+  
+    
+
+        <!-- Projects Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Our
+                        Projects<span></span></p>
+                    <h1 class="text-center mb-5">Recently Completed Projects</h1>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">All</li>
+                            <li class="mx-2" data-filter=".ui-ux">UI/UX Design</li>
+                            <li class="mx-2" data-filter=".web">Web Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4 portfolio-container">
+                    <!-- UI/UX Design Projects -->
+                    <div class="col-lg-4 col-md-6 portfolio-item ui-ux wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/app screen.png" alt="" style="height: 300px;">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/app screen.png"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI/UX Design</p>
+                                <h5 class="lh-base mb-0">App Screen</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item ui-ux wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/app-screen-2.png" alt="" style="height: 300px;">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/app-screen-2.png"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI/UX Design</p>
+                                <h5 class="lh-base mb-0">Coffee Mobile App design</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item ui-ux wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/3-page-ui.png" alt="" style="height: 300px">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/3-page-ui.png"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI/UX Design</p>
+                                <h5 class="lh-base mb-0">Favourite Food</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item ui-ux wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/website 1.png" alt="" style="height: 300px;">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/website 1.png"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI/UX Design</p>
+                                <h5 class="lh-base mb-0">Web Pages</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item ui-ux wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/learning.png" alt="" style="height: 300px;">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/learning.png"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI/UX Design</p>
+                                <h5 class="lh-base mb-0">Esucation Learning Website UI</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item ui-ux wow fadeInUp" data-wow-delay="1.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/Watch site 1 (1).png" alt="" style="height: 300px;">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/Watch site 1 (1).png"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">UI/UX Design</p>
+                                <h5 class="lh-base mb-0">Hero Section UI</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+<!-- Web Design Projects -->
+<div class="col-lg-4 col-md-6 portfolio-item web wow fadeInUp" data-wow-delay="0.1s">
+    <div class="rounded overflow-hidden project-link d-flex flex-column h-100">
+        <div class="position-relative overflow-hidden bg-light p-4 flex-grow-1">
+            <div class="portfolio-description d-flex flex-column h-100">
+                <h4 class="text-primary mb-3">Education Website</h4>
+                <p class="mb-3 flex-grow-1">A responsive education platform designed to provide seamless learning experiences. Features include course categorization, student dashboards, and interactive content. Built with modern web technologies to ensure accessibility across all devices.</p>
+                <div class="mt-auto">
+                    <a href="https://fabiyanoor.github.io/Education-website/" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">Visit Site</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light p-3 border-top">
+            <p class="text-primary fw-medium mb-1">Web Design</p>
+            <h5 class="lh-base mb-0">Education Website</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 portfolio-item web wow fadeInUp" data-wow-delay="0.3s">
+    <div class="rounded overflow-hidden project-link d-flex flex-column h-100">
+        <div class="position-relative overflow-hidden bg-light p-4 flex-grow-1">
+            <div class="portfolio-description d-flex flex-column h-100">
+                <h4 class="text-primary mb-3">Food Landing Page</h4>
+                <p class="mb-3 flex-grow-1">An appetizing food delivery landing page with vibrant visuals and intuitive navigation. Highlights include menu showcases, special offers section, and quick ordering functionality. Optimized for conversions and mobile users.</p>
+                <div class="mt-auto">
+                    <a href="https://minhal-zubair.github.io/Responsive_Food_Landing_Page/" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">Visit Site</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light p-3 border-top">
+            <p class="text-primary fw-medium mb-1">Web Design</p>
+            <h5 class="lh-base mb-0">Food Landing Page</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 portfolio-item web wow fadeInUp" data-wow-delay="0.5s">
+    <div class="rounded overflow-hidden project-link d-flex flex-column h-100">
+        <div class="position-relative overflow-hidden bg-light p-4 flex-grow-1">
+            <div class="portfolio-description d-flex flex-column h-100">
+                <h4 class="text-primary mb-3">Quiz App</h4>
+                <p class="mb-3 flex-grow-1">It is an interactive app that allows users to test their knowledge on various topics through multiple-choice or true/false questions. It typically features score tracking, timed quizzes, and instant feedback on answers.</p>
+                <div class="mt-auto">
+                    <a href="https://tayyabatalib.github.io/Quiz/" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">Visit Site</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light p-3 border-top">
+            <p class="text-primary fw-medium mb-1">Web Design</p>
+            <h5 class="lh-base mb-0">Quiz App</h5>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+                            <!-- Projects End -->
+
+        <!-- Rest of your HTML remains the same -->
+ <!-- Footer Start -->
+ <div class="container-fluid bg-primary text-light footer animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5 px-lg-5">
+        <div class="row g-5">
+            <div class="col-md-4 col-lg-4">
+                <h5 class="section-title text-white mb-3 animate__animated animate__fadeInUp">Contact Us</h5>
+                <ul class="list-unstyled ps-1">
+                    <li class="mb-2 animate__animated animate__fadeInLeft" data-wow-delay="0.1s"><i class="fa fa-envelope me-2"></i> hello@devynest.com</li>
+                    <li class="animate__animated animate__fadeInLeft" data-wow-delay="0.2s"><i class="fa fa-phone-alt me-2"></i> +123 456 7890</li>
+                </ul>
+                <div class="d-flex pt-3 gap-2">
+                    <a class="btn btn-social rounded-circle animate__animated animate__rotateIn" data-wow-delay="0.1s" href="https://twitter.com/devynest" target="_blank" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-social rounded-circle animate__animated animate__rotateIn" data-wow-delay="0.2s" href="https://facebook.com/devynest" target="_blank" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-social rounded-circle animate__animated animate__rotateIn" data-wow-delay="0.3s" href="https://instagram.com/devynest" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social rounded-circle animate__animated animate__rotateIn" data-wow-delay="0.4s" href="https://linkedin.com/company/devynest" target="_blank" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <h5 class="section-title text-white mb-3 animate__animated animate__fadeInUp">Explore</h5>
+                <a class="btn btn-link animate__animated animate__fadeInLeft" data-wow-delay="0.1s" href="about.html">About Us</a>
+                <a class="btn btn-link animate__animated animate__fadeInLeft" data-wow-delay="0.2s" href="service.html">Services</a>
+                <a class="btn btn-link animate__animated animate__fadeInLeft" data-wow-delay="0.3s" href="team.html">Our Team</a>
+                <a class="btn btn-link animate__animated animate__fadeInLeft" data-wow-delay="0.4s" href="project.html">Projects</a>
+                <a class="btn btn-link animate__animated animate__fadeInLeft" data-wow-delay="0.5s" href="contact.html">Contact</a>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <h5 class="section-title text-white mb-3 animate__animated animate__fadeInUp">Newsletter</h5>
+                <p class="mb-2 animate__animated animate__fadeInUp" data-wow-delay="0.1s">Subscribe for the latest news and updates.</p>
+                <form id="newsletter-form" onsubmit="alert('Subscribed!'); return false;">
+                    <div class="position-relative w-100 mt-3">
+                        <input class="form-control border-0 rounded-pill ps-4 pe-5 animate__animated animate__fadeInUp" data-wow-delay="0.2s" type="email" placeholder="Your Email" style="height: 48px;" required>
+                        <button type="submit" class="btn position-absolute top-0 end-0 mt-1 me-2 rounded-circle bg-secondary shadow-sm animate__animated animate__rotateIn" data-wow-delay="0.3s"><i class="fa fa-paper-plane text-dark fs-5"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="copyright text-center border-top pt-3">
+            <p class="tagline fw-bold mb-1 animate__animated animate__fadeInUp" style="color: var(--secondary);">Crafting Your Digital Future with Passion</p>
+            <p class="mb-0 small animate__animated animate__fadeInUp" data-wow-delay="0.1s">© <a class="text-white fw-bold" href="#">Devynest</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Simple portfolio filter
+        $(document).ready(function(){
+            // Filter items when filter is clicked
+            $('#portfolio-flters li').click(function(){
+                $('#portfolio-flters li').removeClass('active');
+                $(this).addClass('active');
+                
+                var filter = $(this).data('filter');
+                
+                if(filter == '*') {
+                    $('.portfolio-item').removeClass('hidden');
+                } else {
+                    $('.portfolio-item').addClass('hidden');
+                    $(filter).removeClass('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
